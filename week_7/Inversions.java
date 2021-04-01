@@ -21,8 +21,8 @@ public class Inversions {
         for (int i = n - 1; i > 0; i--) {
             if (k >= i) {
                 a[aHead] = i;
-                k -= i;
                 aHead++;
+                k -= i;
             }
             else {
                 a[aTail] = i;
